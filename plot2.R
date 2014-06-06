@@ -13,3 +13,5 @@ plot(final.data$Global_active_power~final.data$time, type = "l",
      ylab = "Global Active Power (kilowatts)", xlab = "")
 dev.copy(png, file = "plot2.png", width = 480, height = 480, units = "px")
 dev.off()
+# Чт Пт and Сб is the same as Thu Fri and Sat, but I cannot
+# change the language of it
