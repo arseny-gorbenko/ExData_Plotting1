@@ -8,7 +8,7 @@ date = data$time
 lower = strptime("2/1/2007 00:00","%m/%d/%Y %H:%M")
 upper = strptime("2/2/2007 23:59","%m/%d/%Y %H:%M")
 final.data <- data[date >= lower & date <= upper, ]
-# Construct the Plot 1
+# Construct the Plot 2
 plot(final.data$Global_active_power~final.data$time, type = "l",
      ylab = "Global Active Power (kilowatts)", xlab = "")
 dev.copy(png, file = "plot2.png", width = 480, height = 480, units = "px")
